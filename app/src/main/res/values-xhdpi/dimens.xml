@@ -1,0 +1,33 @@
+<resources>
+
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <item name="d1" format="float" type="dimen">0.6</item>
+    <item name="d2" format="float" type="dimen">0.05</item>
+    <item name="d3" format="float" type="dimen">0.82</item>
+    <item name="d4" format="float" type="dimen">0.4</item>
+    <item name="d5" format="float" type="dimen">0.15</item>
+    <item name="d6" format="float" type="dimen">0.3</item>
+    <item name="d7" format="float" type="dimen">0.29</item>
+    <item name="d8" format="float" type="dimen">0.27</item>
+    <item name="d9" format="float" type="dimen">0.7</item>
+    <item name="d10" format="float" type="dimen">0.45</item>
+    <item name="d11" format="float" type="dimen">0.76</item>
+    <item name="d12" format="float" type="dimen">0.24</item>
+    <item name="d13" format="float" type="dimen">0.8</item>
+    <item name="d14" format="float" type="dimen">0.2</item>
+    <item name="d15" format="float" type="dimen">0.77</item>
+    <item name="d16" format="float" type="dimen">0.23</item>
+    <item name="d17" format="float" type="dimen">0.75</item>
+    <item name="d18" format="float" type="dimen">0.63</item>
+    <item name="d19" format="float" type="dimen">0.37</item>
+    <item name="d20" format="float" type="dimen">0.58</item>
+    <item name="d21" format="float" type="dimen">0.42</item>
+    <item name="d22" format="float" type="dimen">0.53</item>
+    <item name="d23" format="float" type="dimen">0.47</item>
+    <item name="d24" format="float" type="dimen">0.52</item>
+    <item name="d25" format="float" type="dimen">0.35</item>
+    <item name="d26" format="float" type="dimen">0.65</item>
+    <item name="d27" format="float" type="dimen">0.25</item>
+
+</resources>

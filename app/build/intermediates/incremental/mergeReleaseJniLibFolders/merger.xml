@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="M:\Others\WorkSpace(Android_Studio)\Love\app\src\release\jniLibs"/></dataSet></merger>

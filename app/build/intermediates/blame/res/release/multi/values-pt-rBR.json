@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 268,
+                    "endOffset": 369
+                },
+                "from": {
+                    "file": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.6.1\\res\\values-pt-rBR\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 347,
+                        "endColumn": 268,
+                        "endOffset": 611
+                    }
+                }
+            }
+        ]
+    }
+]

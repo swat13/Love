@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\result.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\result.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\register.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_decor.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_simple_decor.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_home.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_home.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\about_us.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\about_us.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_overlay.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_decor_overlay.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\magic.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\magic.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\good_wife.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\good_wife.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tab.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_tab.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_mode_close_item.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_decor.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_include.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_decor_include.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\stone.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\stone.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tabbar.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_bar_tabbar.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\secret_month.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\secret_month.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\20.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\disable_dialog.xml",
+        "source": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\src\\main\\res\\layout\\disable_dialog.xml"
+    }
+]

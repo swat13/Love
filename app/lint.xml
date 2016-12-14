@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/ir/masterArt/yourLove/MainActivity.java" />
+        <ignore path="src/ir/masterArt/yourLove/SendByMail.java" />
+        <ignore path="src/ir/masterArt/yourLove/register.java" />
+        <ignore path="src/ir/masterArt/yourLove/stone.java" />
+    </issue>
+</lint>

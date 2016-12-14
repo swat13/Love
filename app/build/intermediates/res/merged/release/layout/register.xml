@@ -1,0 +1,149 @@
+
+    	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+			<LinearLayout 
+			    android:id="@+id/container"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:background="#343434" >
+			    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="0dp"
+				    android:layout_weight="@dimen/d1"
+				    android:orientation="vertical"
+				    android:background="@drawable/register_back_top"
+				    android:gravity="center">
+				    <RelativeLayout
+					    android:layout_width="wrap_content"
+					    android:layout_height="0dp"
+					    android:background="@drawable/reg_top"
+					    android:layout_weight="0.20">
+					    <TextView
+				            android:id="@+id/titlePage"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerHorizontal="true"
+					        android:layout_alignParentTop="true"
+					        style="@android:style/TextAppearance.Large"
+					        android:text="عضویت"
+					        android:textColor="#fefefe"/>
+				    </RelativeLayout>
+				    <TextView
+			            android:id="@+id/selectText"
+				        android:layout_width="wrap_content"
+				        android:layout_height="0dp"
+				    	android:layout_weight="@dimen/d5"
+				        android:layout_marginTop="10dp"
+				        style="@android:style/TextAppearance.Medium"
+				        android:text="برای استفاده از برنامه ابتدا عضو آن شوید:"
+				        android:textColor="#fefefe"/>
+			    	<View
+				        android:layout_width="0dp"
+				        android:layout_height="0dp"
+				        android:layout_weight="0.8" />
+			        
+				</LinearLayout>
+				
+			    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="0dp"
+				    android:layout_weight="@dimen/d4"
+				    android:orientation="vertical"
+				    android:gravity="center|top">
+				</LinearLayout>
+			</LinearLayout>
+			<EditText
+	            android:id="@+id/name_e"
+	            android:layout_above="@+id/phone_e"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="start"
+	            android:layout_margin="10dp"
+	            android:paddingLeft="8dp"
+	            android:paddingRight="8dp"
+	            android:layout_centerInParent="true"
+	            android:gravity="center"
+	            android:lines="1" 
+	            android:singleLine="true"
+	            android:ellipsize="start"
+	            android:hint="نام و نام خانوادگی"
+	            android:background="@drawable/edit_back">
+	            <requestFocus />
+	        </EditText>
+			<EditText
+	            android:id="@+id/phone_e"
+	            android:layout_above="@+id/mailedittext"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="start"
+	            android:paddingLeft="8dp"
+	            android:layout_margin="10dp"
+	            android:paddingRight="8dp"
+	            android:inputType="phone"
+	            android:gravity="center"
+	            android:layout_centerInParent="true"
+	            android:hint="تلفن"
+	            android:ellipsize="start"
+	            android:lines="1" 
+	            android:background="@drawable/edit_back">
+	            <requestFocus />
+	        </EditText>
+			<EditText
+	            android:id="@+id/mailedittext"
+	            android:layout_above="@+id/sexLayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="start"
+	            android:gravity="center"
+	            android:layout_margin="10dp"
+	            android:paddingLeft="8dp"
+	            android:paddingRight="8dp"
+	            android:hint="ایمیل"
+	            android:ellipsize="start"
+	            android:inputType="textEmailAddress"
+	            android:lines="1" 
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/edit_back">
+	            <requestFocus />
+	        </EditText>
+
+				<RelativeLayout
+				    android:id="@+id/sexLayout" 
+				    android:layout_above="@+id/ok"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content"
+				    android:layout_centerInParent="true"
+				    android:layout_margin="10dp"
+	                android:gravity="center">
+					<Spinner
+					    android:id="@+id/spinnerSex"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textColor="#FFFFFF"
+					    android:background="@drawable/edit_back"
+					    android:spinnerMode="dropdown" />
+					<ImageView 
+			         	android:layout_width="20dp"
+				        android:layout_height="20dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_centerInParent="true"
+				        android:layout_alignParentLeft="true"
+				        android:src="@drawable/arrow_down" />
+				</RelativeLayout>
+			<Button
+	            android:id="@+id/ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="ثبت"
+	            android:padding="3dp"
+	            android:textColor="#FFFFFF"
+	            style="@android:style/TextAppearance.Medium"
+	            android:layout_centerHorizontal="true"
+		        android:layout_alignParentBottom="true"
+		        android:layout_margin="5dp"
+	            android:background="@drawable/but_back" />
+		</RelativeLayout>
+		
+		

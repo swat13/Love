@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/regLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#343434"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/d1"
+                android:background="@drawable/register_back_top"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/reg_top">
+
+                    <TextView
+                        android:id="@+id/titlePage"
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="عضویت"
+                        android:textColor="#fefefe" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/selectText"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="شما بزرگواران با ثبت نام در این برنامه و ارسال نظرات خود، مارا در بهبود این برنامه و برنامه های آتی یاری میکنید. همچنین از اخبار و اطلاعات برنامه های بعدی ما مطلع میگردید. خبرهای خوشی در راه است..."
+                    android:textColor="#fefefe" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/d4"
+                android:gravity="center|top"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/name_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_e"
+            android:layout_centerInParent="true"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_back"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="نام و نام خانوادگی"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"></EditText>
+
+        <EditText
+            android:id="@+id/phone_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mailedittext"
+            android:layout_centerInParent="true"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_back"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="تلفن"
+            android:inputType="phone"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"></EditText>
+
+        <EditText
+            android:id="@+id/mailedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sexLayout"
+            android:layout_centerInParent="true"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_back"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="ایمیل"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"></EditText>
+
+        <RelativeLayout
+            android:id="@+id/sexLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ok"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinnerSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_back"
+                android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/arrow_down" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ok"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/but_back"
+            android:padding="3dp"
+            android:text="ثبت"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#343434"
+        android:orientation="vertical">
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" /> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65"
+            android:background="@drawable/home_top">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/aboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="#343434"
+                android:onClick="onClick" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.36"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/monthStone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/month_stone"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/magic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/magic"
+                    android:onClick="onClick" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.34"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/loveSecret"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/love_secret"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/goodWife"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/good_wife"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

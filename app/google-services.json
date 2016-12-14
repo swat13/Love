@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "819323482501",
+    "firebase_url": "https://love-6ef96.firebaseio.com",
+    "project_id": "love-6ef96",
+    "storage_bucket": "love-6ef96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819323482501:android:21397fccea72edb7",
+        "android_client_info": {
+          "package_name": "ir.masterArt.yourLove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819323482501-7dnqddltte55bbdac6histoiv7tuhr86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuv-A9S6t7Dd8W4ex0dTmyK-jDOciONjE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819323482501-7dnqddltte55bbdac6histoiv7tuhr86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
