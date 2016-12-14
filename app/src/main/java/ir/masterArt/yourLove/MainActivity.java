@@ -88,27 +88,30 @@ public class MainActivity extends Activity implements OnClickListener {
 //        alertDialog.show();
 //        dialogBuilder.show();
 
-        final Dialog dialog = new Dialog(MainActivity.this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.disable_dialog, null);
-        dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                values.edit().putBoolean("first", true).commit();
-                SmsManager sms = SmsManager.getDefault();
-                sms.sendTextMessage("09127764165", null, "Hi, Ali", null, null);
-            }
-        });
-        dialogView.findViewById(R.id.close).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-        dialog.setContentView(dialogView);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.setCancelable(false);
-        dialog.show();
+        if (!values.getBoolean("first", false)) {
+            final Dialog dialog = new Dialog(MainActivity.this);
+            LayoutInflater inflater = this.getLayoutInflater();
+            View dialogView = inflater.inflate(R.layout.disable_dialog, null);
+            dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    values.edit().putBoolean("first", true).commit();
+                    SmsManager sms = SmsManager.getDefault();
+                    sms.sendTextMessage("09127764165", null, "Hi, Ali", null, null);
+                    dialog.dismiss();
+                }
+            });
+            dialogView.findViewById(R.id.close).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+            dialog.setContentView(dialogView);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.setCancelable(false);
+            dialog.show();
+        }
 
         /*new AlertDialog.Builder(MainActivity.this)
                 .setTitle("هشدار")
