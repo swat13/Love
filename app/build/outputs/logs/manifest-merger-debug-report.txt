@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:2:1-65:12
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:2:1-77:12
 	package
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml
@@ -26,6 +26,7 @@ MERGED from [com.google.firebase:firebase-common:9.6.1] M:\Others\WorkSpace(Andr
 MERGED from [com.google.android.gms:play-services-tasks:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\AndroidManifest.xml:17:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:24.0.0] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
@@ -62,7 +63,7 @@ MERGED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android
 	android:name
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:16:22-65
 application
-ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:18:5-63:19
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:18:5-75:19
 MERGED from [com.android.support:appcompat-v7:20.0.0] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\AndroidManifest.xml:17:5-19
 MERGED from [com.android.support:support-v4:24.0.0] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.google.firebase:firebase-core:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.6.1\AndroidManifest.xml:5:5-20
@@ -72,6 +73,7 @@ MERGED from [com.google.firebase:firebase-common:9.6.1] M:\Others\WorkSpace(Andr
 MERGED from [com.google.android.gms:play-services-tasks:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\AndroidManifest.xml:4:5-19
 MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-messaging:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\AndroidManifest.xml:19:5-29:19
 	android:label
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:21:9-41
 	android:allowBackup
@@ -100,42 +102,62 @@ category#android.intent.category.LAUNCHER
 ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:31:27-74
+service#ir.masterArt.yourLove.Firebase.MyFirebaseMessagingService
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:40:9-44:19
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:40:18-69
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:41:13-43:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:42:25-75
+service#ir.masterArt.yourLove.Firebase.MyFirebaseInstanceIDService
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:45:9-49:19
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:45:18-70
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:46:13-48:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:47:17-79
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:47:25-77
 activity#ir.masterArt.yourLove.secretMonth
-ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:39:9-42:20
-	android:screenOrientation
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:41:13-49
-	android:name
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:40:13-39
-activity#ir.masterArt.yourLove.goodWife
-ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:43:9-46:20
-	android:screenOrientation
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:45:13-49
-	android:name
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:44:13-36
-activity#ir.masterArt.yourLove.stone
-ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:47:9-50:20
-	android:screenOrientation
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:49:13-49
-	android:name
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:48:13-33
-activity#ir.masterArt.yourLove.magic
 ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:51:9-54:20
 	android:screenOrientation
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:53:13-49
 	android:name
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:52:13-33
-activity#ir.masterArt.yourLove.result
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:52:13-39
+activity#ir.masterArt.yourLove.goodWife
 ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:55:9-58:20
 	android:screenOrientation
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:57:13-49
 	android:name
-		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:56:13-34
-activity#ir.masterArt.yourLove.about
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:56:13-36
+activity#ir.masterArt.yourLove.stone
 ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:59:9-62:20
 	android:screenOrientation
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:61:13-49
 	android:name
 		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:60:13-33
+activity#ir.masterArt.yourLove.magic
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:63:9-66:20
+	android:screenOrientation
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:65:13-49
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:64:13-33
+activity#ir.masterArt.yourLove.result
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:67:9-70:20
+	android:screenOrientation
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:69:13-49
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:68:13-34
+activity#ir.masterArt.yourLove.about
+ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:71:9-74:20
+	android:screenOrientation
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:73:13-49
+	android:name
+		ADDED from M:\Others\WorkSpace(Android_Studio)\Love\app\src\main\AndroidManifest.xml:72:13-33
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
 ADDED from [com.google.firebase:firebase-analytics:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:25:7-26:18
 MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:25:7-26:18
@@ -232,11 +254,9 @@ ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_
 		ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:44:83-106
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:44:18-82
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:45:13-47:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:45:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:46:17-79
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-messaging:9.6.1] M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\AndroidManifest.xml:23:18-87

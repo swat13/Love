@@ -2,15 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-analytics-impl-9.6.1_5d72b4fa416f61b0abc4edf3f1ba7c92f31c4058.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
         jumboMode="true"
@@ -30,57 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0f6f15e494c1d097d261f3a4338481856bdf7fde">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c26d4c434dbc2a4fec7ce9b613214434ef1ae4c1\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-analytics-9.6.1_3585e19e9c428f50b4a59542cd1f75da63b0b9bc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-24.0.0_a56112cb8a4211ca53184e0caa30ee725bf4a06e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-9.6.1_e34a3ddc4104d9c23047787e0332c71f1e988f7d.jar" />
-    </item>
-    <item
-        is-multidex="true"
         jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="d87aa7829289de7894030d21d0db722146963922">
+        sha1="d7e0bc63d5c1527ecfce26b6d64dc34441b608dc">
         <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0278ba1e2b4157526d75026d8a74085349574406\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-9.6.1_05fe0357a770159bab9a814ccf55c0033dbd29a3.jar" />
     </item>
     <item
         is-multidex="true"
@@ -90,24 +36,6 @@
         revision="24.0.2"
         sha1="4a36600281a648769411ef642c331851732bf29e">
         <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.1_e34a3ddc4104d9c23047787e0332c71f1e988f7d\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-iid-9.6.1_ba8eafbf4d5609e5bcdef103eb53f8605e125fb8.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-20.0.0_7e77982f18e1dfee0e8779af940438193e091522\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -128,33 +56,6 @@
         <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_45f64a5f31a437d13c23f0a5c03db619703b9b4e\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-20.0.0_7e77982f18e1dfee0e8779af940438193e091522.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\internal_impl-24.0.0_45f64a5f31a437d13c23f0a5c03db619703b9b4e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-common-9.6.1_7a19ae1ea612e215c8476804cfdc9c630012f99b.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="M:\ADT\New_Studio_SDK\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
         jumboMode="true"
@@ -162,15 +63,6 @@
         revision="24.0.2"
         sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
         <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0_d3dc262a0e52f74b71d9d3b0c7ee25f8977681be\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="M:\ADT\New_Studio_SDK\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\pre-dexed\release\support-annotations-24.0.0_d3dc262a0e52f74b71d9d3b0c7ee25f8977681be.jar" />
     </item>
     <item
         is-multidex="true"
@@ -183,21 +75,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_ba8eafbf4d5609e5bcdef103eb53f8605e125fb8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
         <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.6.1_5d72b4fa416f61b0abc4edf3f1ba7c92f31c4058\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.6.1_2d82e26418915f65e30ebb05b5555967e4fa678d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bc533fd9382fe3dff6424662cb4ff479fa5cb0e2">
+        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c26d4c434dbc2a4fec7ce9b613214434ef1ae4c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-20.0.0_7e77982f18e1dfee0e8779af940438193e091522\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="M:\Others\WorkSpace(Android_Studio)\Love\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_ba8eafbf4d5609e5bcdef103eb53f8605e125fb8\classes.dex" />
     </item>
 
 </items>
