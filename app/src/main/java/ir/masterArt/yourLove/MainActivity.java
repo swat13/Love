@@ -7,15 +7,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -200,12 +191,6 @@ public class MainActivity extends Activity implements OnClickListener {
                                 @Override
                                 public void run() {
                                     // TODO Auto-generated method stub
-                                    try {
-                                        sendAccelerationData(name, phone, mail, sex + "", mPhoneIMEI);
-                                    } catch (UnsupportedEncodingException e) {
-                                        // TODO Auto-generated catch block
-                                        e.printStackTrace();
-                                    }
                                 }
                             }).start();
                         else {
@@ -219,46 +204,6 @@ public class MainActivity extends Activity implements OnClickListener {
                     Toast.makeText(MainActivity.this, "لطفن اطلاعات را کامل  وارد کنید !", Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    public void sendAccelerationData(String name, String phone, String mail, String sex, String imei) throws UnsupportedEncodingException {
-        StrictMode.enableDefaults();
-        //Add data to be send.
-        ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(5);
-
-        String finalString = URLEncoder.encode(name, "UTF-8");
-        nameValuePairs.add(new BasicNameValuePair("name", finalString));
-        nameValuePairs.add(new BasicNameValuePair("phone", phone));
-        nameValuePairs.add(new BasicNameValuePair("mail", mail));
-        nameValuePairs.add(new BasicNameValuePair("sex", sex));
-        nameValuePairs.add(new BasicNameValuePair("imei", imei));
-
-        HttpResponse response = null;
-
-        try {
-            HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://officechair.ir/yourLove.php");
-//	    	httppost.setHeader( "Content-Type", "application/json;charset=UTF-8" );
-            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs, HTTP.UTF_8));//);
-            response = httpclient.execute(httppost);
-            Log.e("postData", response.getStatusLine().toString());
-            if (response.getStatusLine().toString().contains("OK")) {
-                SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
-                values.edit().putBoolean("SEND", true).commit();
-            }
-            this.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    dialog.dismiss();
-                    main.setVisibility(View.VISIBLE);
-                    reg.setVisibility(View.GONE);
-                }
-            });
-
-        } catch (Exception e) {
-            //Toast.makeText(IncomingSms.this, response.getStatusLine().toString(), Toast.LENGTH_SHORT).show();
-        }
-
     }
 
     private class MyArrayAdapter extends BaseAdapter {

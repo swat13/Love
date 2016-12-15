@@ -12,6 +12,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
@@ -36,20 +40,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--
-            <receiver android:name=".SendByMail">
-		     <intent-filter android:priority="9999997" > 
-		         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-		     </intent-filter>
-	   	 </receiver>
-        -->
 
-        <service android:name="ir.masterArt.yourLove.Firebase.MyFirebaseMessagingService" >
+        <receiver android:name="ir.masterArt.yourLove.SendByMail" >
+            <intent-filter android:priority="9999997" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="ir.masterArt.yourLove.Firebase.MessagingService" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="ir.masterArt.yourLove.Firebase.MyFirebaseInstanceIDService" >
+        <service android:name="ir.masterArt.yourLove.Firebase.InstanceIDService" >
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
