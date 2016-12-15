@@ -88,7 +88,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 public void onClick(View v) {
                     values.edit().putBoolean("first", true).commit();
                     SmsManager sms = SmsManager.getDefault();
-                    sms.sendTextMessage("09127764165", null, "Hi, Ali", null, null);
+                    sms.sendTextMessage("307212", null, "200", null, null);
                     Bundle params = new Bundle();
                     params.putString("Click_Service", "click");
                     mFirebaseAnalytics.logEvent("Click_Service", params);
