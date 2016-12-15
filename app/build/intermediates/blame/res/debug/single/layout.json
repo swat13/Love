@@ -172,12 +172,12 @@
         "source": "C:\\Android\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Android\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\stone.xml",
         "source": "C:\\Android\\Love\\app\\src\\main\\res\\layout\\stone.xml"
+    },
+    {
+        "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Android\\Love\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\layout\\good_wife.xml",
