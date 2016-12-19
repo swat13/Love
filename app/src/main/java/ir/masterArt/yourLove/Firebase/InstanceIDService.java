@@ -1,8 +1,11 @@
+/*
 package ir.masterArt.yourLove.Firebase;
 
+*/
 /**
  * Created by Alif on 10/5/2016.
- */
+ *//*
+
 
 import android.util.Log;
 
@@ -21,13 +24,17 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+*/
 /**
  * Created by Belal on 5/27/2016.
- */
+ *//*
 
+
+*/
 /*
 * rt
-* */
+* *//*
+
 //Class extending FirebaseInstanceIdService
 public class InstanceIDService extends FirebaseInstanceIdService {
 
@@ -80,4 +87,4 @@ public class InstanceIDService extends FirebaseInstanceIdService {
     }
 
 
-}
+}*/

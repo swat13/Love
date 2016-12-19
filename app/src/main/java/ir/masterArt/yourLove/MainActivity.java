@@ -1,49 +1,38 @@
 package ir.masterArt.yourLove;
 
 
-import ir.masterArt.yourLove.magic.ListContent;
-
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemSelectedListener;
 
-import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
+
+import ir.masterArt.yourLove.magic.ListContent;
+
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -54,15 +43,17 @@ public class MainActivity extends Activity implements OnClickListener {
     RelativeLayout reg;
     LinearLayout main;
     boolean regGo = true;
+    private Tracker mTracker;
+    String action = "", sendNum = "", code = "";
 
-    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        mTracker = application.getDefaultTracker();
 
         final SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
         reg = (RelativeLayout) findViewById(R.id.regLayout);
@@ -78,20 +69,39 @@ public class MainActivity extends Activity implements OnClickListener {
 //        AlertDialog alertDialog = dialogBuilder.create();
 //        alertDialog.show();
 //        dialogBuilder.show();
-
+        TelephonyManager manager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        String carrierName = manager.getNetworkOperatorName();
+        Log.e("@@@@@@@@@##########", "onCreate: " + carrierName);
         if (!values.getBoolean("first", false)) {
             final Dialog dialog = new Dialog(MainActivity.this);
             LayoutInflater inflater = this.getLayoutInflater();
             View dialogView = inflater.inflate(R.layout.disable_dialog, null);
+            TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
+            if (carrierName.contains("IR-MCI")) {
+                action = "IR-MCI";
+                sendNum = "307212";
+                code = "200";
+                textView.setText(getResources().getString(R.string.mci));
+            } else if (carrierName.contains("Irancell")) {
+                action = "Irancell";
+                sendNum = "738501";
+                code = "200";
+                textView.setText(getResources().getString(R.string.mtn));
+            } else {
+                action = "Other";
+            }
             dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     values.edit().putBoolean("first", true).commit();
                     SmsManager sms = SmsManager.getDefault();
-                    sms.sendTextMessage("307212", null, "200", null, null);
-                    Bundle params = new Bundle();
-                    params.putString("Click_Service", "click");
-                    mFirebaseAnalytics.logEvent("Click_Service", params);
+                    if (sendNum.length() > 2) {
+                        sms.sendTextMessage(sendNum, null, code, null, null);
+                    }
+                    mTracker.send(new HitBuilders.EventBuilder()
+                            .setCategory(action)
+                            .setAction("Click_OK")
+                            .build());
                     dialog.dismiss();
                 }
             });
@@ -99,6 +109,10 @@ public class MainActivity extends Activity implements OnClickListener {
                 @Override
                 public void onClick(View v) {
                     finish();
+                    mTracker.send(new HitBuilders.EventBuilder()
+                            .setCategory(action)
+                            .setAction("Click_Cancel")
+                            .build());
                 }
             });
             dialog.setContentView(dialogView);
@@ -132,7 +146,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			reg.setVisibility(View.GONE);
 		}*/
 
-        font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
+        /*font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
         TextView selectText = (TextView) findViewById(R.id.selectText);
         TextView titleText = (TextView) findViewById(R.id.titlePage);
         Button ok = (Button) findViewById(R.id.ok);
@@ -158,7 +172,7 @@ public class MainActivity extends Activity implements OnClickListener {
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
             }
-        });
+        });*/
     }
 
     private class MyArrayAdapter extends BaseAdapter {
