@@ -78,10 +78,6 @@
             android:name="ir.masterArt.yourLove.result"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name="ir.masterArt.yourLove.about"
-            android:screenOrientation="portrait" >
-        </activity>
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:text="همسر ايده الي باش با عضويت در ويديوهاي اشپزي متنوع ديجي فود كه خيلي بيشتر از هزينش كه روزي چهارصد تومن مي ارزه"
+            android:text="استفاده از اپليكيشن همسر ايده ال به همراه عضويت در ديجي فود با هزينه روزانه چهارصد تومان"
             android:textColor="#000000" />
 
         <LinearLayout

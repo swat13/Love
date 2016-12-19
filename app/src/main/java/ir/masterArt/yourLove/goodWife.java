@@ -257,7 +257,6 @@ public class goodWife extends Activity implements OnClickListener{
 		case R.id.aboutText:
 			onBackPressed();
 			dLayout.closeDrawers();
-			i = new Intent(goodWife.this, about.class);
 			break;
 		default:
 			break;

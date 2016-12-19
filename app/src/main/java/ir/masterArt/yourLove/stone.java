@@ -264,7 +264,6 @@ public class stone extends Activity implements OnClickListener{
 		case R.id.aboutText:
 			onBackPressed();
 			dLayout.closeDrawers();
-			i = new Intent(stone.this, about.class);
 			break;
 		default:
 			break;

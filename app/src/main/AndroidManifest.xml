@@ -72,10 +72,6 @@
             android:name="result"
             android:screenOrientation="portrait">
         </activity>
-        <activity 
-            android:name="about"
-            android:screenOrientation="portrait">
-        </activity>
     </application>
 
 </manifest>

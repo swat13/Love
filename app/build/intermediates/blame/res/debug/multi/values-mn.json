@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Android\\Love\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
+        "outputFile": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 356
                 },
                 "from": {
-                    "file": "C:\\Android\\Love\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.6.1\\res\\values-mn\\values.xml",
+                    "file": "M:\\Others\\WorkSpace(Android_Studio)\\Love\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.6.1\\res\\values-mn\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

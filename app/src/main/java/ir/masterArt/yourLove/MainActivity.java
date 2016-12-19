@@ -133,17 +133,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		}*/
 
         font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
-        final EditText phoneText = (EditText) findViewById(R.id.phone_e);
-        final EditText nameText = (EditText) findViewById(R.id.name_e);
-        final EditText mailText = (EditText) findViewById(R.id.mailedittext);
         TextView selectText = (TextView) findViewById(R.id.selectText);
         TextView titleText = (TextView) findViewById(R.id.titlePage);
         Button ok = (Button) findViewById(R.id.ok);
 
-        phoneText.setTypeface(font);
-        mailText.setTypeface(font);
         selectText.setTypeface(font);
-        nameText.setTypeface(font);
         ok.setTypeface(font);
         titleText.setTypeface(font);
 
@@ -163,48 +157,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
-            }
-        });
-
-        ok.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                final String name = nameText.getText().toString();
-                final String phone = phoneText.getText().toString();
-                final String mail = mailText.getText().toString();
-
-                if (name.length() != 0 && phone.length() != 0 && mail.length() != 0) {
-                    if (mail.contains("@") && mail.contains(".com")) {
-                        progg_dialog();
-                        TelephonyManager tMgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-                        final String mPhoneIMEI = tMgr.getDeviceId();
-                        SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
-                        values.edit().putString("name", name).commit();
-                        values.edit().putString("phone", phone).commit();
-                        values.edit().putString("mail", mail).commit();
-                        values.edit().putString("sex", sex + "").commit();
-                        values.edit().putString("imei", mPhoneIMEI).commit();
-                        values.edit().putBoolean("first", false).commit();
-                        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                        NetworkInfo networkInfo = manager.getActiveNetworkInfo();
-                        if (!(networkInfo == null || !networkInfo.isConnected() || !networkInfo.isAvailable()))
-                            new Thread(new Runnable() {
-
-                                @Override
-                                public void run() {
-                                    // TODO Auto-generated method stub
-                                }
-                            }).start();
-                        else {
-                            dialog.dismiss();
-                            main.setVisibility(View.VISIBLE);
-                            reg.setVisibility(View.GONE);
-                        }
-                    } else
-                        Toast.makeText(MainActivity.this, "لطفن ایمیل را صحیح وارد کنید !", Toast.LENGTH_SHORT).show();
-                } else
-                    Toast.makeText(MainActivity.this, "لطفن اطلاعات را کامل  وارد کنید !", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -289,7 +241,6 @@ public class MainActivity extends Activity implements OnClickListener {
                 i = new Intent(MainActivity.this, magic.class);
                 break;
             case R.id.aboutUs:
-                i = new Intent(MainActivity.this, about.class);
                 break;
             default:
                 break;
