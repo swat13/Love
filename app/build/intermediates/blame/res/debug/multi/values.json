@@ -2927,14 +2927,7 @@
                     "endOffset": 114096
                 },
                 "from": {
-                    "file": "C:\\Android\\Love\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 161,
-                        "endColumn": 155,
-                        "endOffset": 312
-                    }
+                    "file": "C:\\Android\\Love\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {

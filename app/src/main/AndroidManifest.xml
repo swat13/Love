@@ -36,11 +36,11 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".SendByMail">
+        <!--<receiver android:name=".SendByMail">
 		     <intent-filter android:priority="9999997" > 
 		         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
 		     </intent-filter>
-	   	 </receiver>
+	   	 </receiver>-->
 
         <!--<service android:name=".Firebase.MessagingService">
             <intent-filter>
@@ -53,7 +53,7 @@
             </intent-filter>
         </service>-->
 
-        <activity 
+        <activity
             android:name="secretMonth"
             android:screenOrientation="portrait">
         </activity>

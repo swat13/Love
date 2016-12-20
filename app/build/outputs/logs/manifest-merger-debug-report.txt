@@ -130,18 +130,6 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:35:27-74
-receiver#ir.masterArt.yourLove.SendByMail
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:39:9-43:18
-	android:name
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:39:19-45
-intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:40:8-42:24
-	android:priority
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:40:23-49
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:41:12-74
-	android:name
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:41:20-71
 activity#ir.masterArt.yourLove.secretMonth
 ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:56:9-59:20
 	android:screenOrientation

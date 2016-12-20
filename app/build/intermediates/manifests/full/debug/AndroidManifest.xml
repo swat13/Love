@@ -42,11 +42,14 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="ir.masterArt.yourLove.SendByMail" >
-            <intent-filter android:priority="9999997" >
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
+        <!--
+            <receiver android:name=".SendByMail">
+		     <intent-filter android:priority="9999997" > 
+		         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		     </intent-filter>
+	   	 </receiver>
+        -->
+
 
         <!--
         <service android:name=".Firebase.MessagingService">

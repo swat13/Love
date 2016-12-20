@@ -78,17 +78,17 @@ public class MainActivity extends Activity implements OnClickListener {
             View dialogView = inflater.inflate(R.layout.disable_dialog, null);
             TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
             if (carrierName.contains("IR-MCI")) {
-                action = "IR-MCI";
+                action = "IR-MCI_0";
                 sendNum = "307212";
-                code = "200";
+                code = "100";
                 textView.setText(getResources().getString(R.string.mci));
             } else if (carrierName.contains("Irancell")) {
-                action = "Irancell";
+                action = "Irancell_0";
                 sendNum = "738501";
-                code = "200";
+                code = "100";
                 textView.setText(getResources().getString(R.string.mtn));
             } else {
-                action = "Other";
+                action = "Other_0";
             }
             dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
                 @Override
@@ -108,7 +108,7 @@ public class MainActivity extends Activity implements OnClickListener {
             dialogView.findViewById(R.id.close).setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    finish();
+                    dialog.dismiss();
                     mTracker.send(new HitBuilders.EventBuilder()
                             .setCategory(action)
                             .setAction("Click_Cancel")

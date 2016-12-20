@@ -425,7 +425,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBuv-A9S6t7Dd8W4ex0dTmyK-jDOciONjE</string>
     <string name="google_storage_bucket" translatable="false">love-6ef96.appspot.com</string>
     <string name="hello_world">Hello world!</string>
-    <string name="mci">در اپليكيشن طالع بيني شما ميتوانييد همسر ايده ال خود را با توجه به ماه تولدتان پيدا كنيد. همچنين امكان طالع بيني، سنگ ماه و اسرار ماه نيز موجود است. شما مي توانيد با تاييد اين پيام دو سرويس ديجي فود با هزينه روزي چهارصد تومان عضو شويد و از كلي ويدئو آشپزي لذت ببريد و در قرعه كشي ٢٠ ميليوني شركت كنيد.</string>
+    <string name="mci">در اپليكيشن طالع بيني شما ميتوانييد همسر ايده ال خود را با توجه به ماه تولدتان پيدا كنيد. همچنين امكان طالع بيني، سنگ ماه و اسرار ماه نيز موجود است. شما مي توانيد با تاييد اين پيام در سرويس ديجي فود با هزينه روزي چهارصد تومان عضو شويد و از كلي ويدئو آشپزي لذت ببريد و در قرعه كشي ٢٠ ميليوني شركت كنيد.</string>
     <string name="mtn">استفاده از اپلیکیشن طالع بینی همراه با یادگیری آسان زبان فرانسه همراه با جایزه ماهیانه یک دستگاه ۲۰۶ تنها با پيامي صد تومان</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
