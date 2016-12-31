@@ -1,5 +1,6 @@
 package ir.masterArt.yourLove;
 
+import ir.adad.client.Adad;
 import ir.masterArt.yourLove.magic.ListContent;
 
 import android.app.Activity;
@@ -42,6 +43,7 @@ public class secretMonth extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
+        Adad.initialize(getApplicationContext());
         setContentView(R.layout.secret_month);
 
 
@@ -56,15 +58,18 @@ public class secretMonth extends Activity implements OnClickListener {
             LayoutInflater inflater = this.getLayoutInflater();
             View dialogView = inflater.inflate(R.layout.disable_dialog, null);
             TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
-            if (carrierName.contains("IR-MCI")) {
+            if (carrierName.contains("MCI")) {
                 action = "IR-MCI_1";
                 sendNum = "307212";
                 code = "100";
                 textView.setText(getResources().getString(R.string.mci));
-            } else if (carrierName.contains("Irancell")) {
+            } else if (carrierName.contains("cell")) {
                 action = "Irancell_1";
                 sendNum = "738501";
                 code = "100";
+                textView.setText(getResources().getString(R.string.mtn));
+            } else if (carrierName.contains("tel")) {
+                action = "Rightel_1";
                 textView.setText(getResources().getString(R.string.mtn));
             } else {
                 action = "Other_1";

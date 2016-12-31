@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "819323482501-l4gqs1udpchomhphogmp1mivi6j64st2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.masterArt.yourLove",
+            "certificate_hash": "6CAB6F6453FC0D4CE82C5996AA482E319136F3F6"
+          }
+        },
+        {
+          "client_id": "819323482501-tpragark5clg4ffbnjrc4bu56d58csvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.masterArt.yourLove",
+            "certificate_hash": "07E937E2B2B383D77D77373885D8B3F1493F359D"
+          }
+        },
+        {
           "client_id": "819323482501-7dnqddltte55bbdac6histoiv7tuhr86.apps.googleusercontent.com",
           "client_type": 3
         }

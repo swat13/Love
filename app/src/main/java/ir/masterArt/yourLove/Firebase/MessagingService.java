@@ -1,4 +1,3 @@
-/*
 package ir.masterArt.yourLove.Firebase;
 
 import android.app.NotificationManager;
@@ -17,7 +16,6 @@ import com.google.firebase.messaging.RemoteMessage;
 import ir.masterArt.yourLove.R;
 
 
-*/
 /**
  * Created by Alif on 10/5/2016.
  *//*
@@ -27,7 +25,7 @@ import ir.masterArt.yourLove.R;
 */
 /**
  * Created by Belal on 5/27/2016.
- *//*
+ */
 
 
 public class MessagingService extends FirebaseMessagingService {
@@ -68,4 +66,4 @@ public class MessagingService extends FirebaseMessagingService {
 
     }
 
-}*/
+}

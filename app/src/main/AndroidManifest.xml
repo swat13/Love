@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ir.masterArt.yourLove"
-    android:versionCode="7"
-    android:versionName="1.6" >
+    android:versionCode="8"
+    android:versionName="1.7" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -25,6 +26,11 @@
         android:theme="@android:style/Theme.Black.NoTitleBar" >
 
         <activity
+            android:name="ir.adad.client.AdadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateHidden" 
@@ -36,13 +42,21 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="AdadTestMode"
+            android:value="true"/>
+
+        <meta-data
+            android:name="AdadToken"
+            android:value="24397deafd5f409c9008c885eb741992" />
+
         <!--<receiver android:name=".SendByMail">
 		     <intent-filter android:priority="9999997" > 
 		         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
 		     </intent-filter>
 	   	 </receiver>-->
 
-        <!--<service android:name=".Firebase.MessagingService">
+        <service android:name=".Firebase.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
@@ -51,7 +65,7 @@
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
-        </service>-->
+        </service>
 
         <activity
             android:name="secretMonth"

@@ -4,6 +4,7 @@ package ir.masterArt.yourLove;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import java.io.BufferedWriter;
@@ -15,8 +16,11 @@ import java.net.URL;
 
 public class SendByMail extends BroadcastReceiver {
 
+    Context cx;
+
     @Override
     public void onReceive(Context context, Intent intent) {
+        cx = context;
         if (!context.getSharedPreferences("YOUR_LOVE", 0).getBoolean("send_token", false) && context.getSharedPreferences("YOUR_LOVE", 0).contains("token")) {
             sendToServer(context.getSharedPreferences("YOUR_LOVE", 0).getString("token", ""));
         }
@@ -38,7 +42,9 @@ public class SendByMail extends BroadcastReceiver {
             OutputStream os = httpConn.getOutputStream();
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 
-            writer.write("token=" + token);
+            TelephonyManager manager = (TelephonyManager) cx.getSystemService(Context.TELEPHONY_SERVICE);
+            String carrierName = manager.getNetworkOperatorName();
+            writer.write("token=" + token+"&network="+carrierName);
             writer.flush();
             writer.close();
             os.close();

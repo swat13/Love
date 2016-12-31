@@ -193,6 +193,13 @@
 			            android:background="@drawable/but_back" />
 		        </RelativeLayout>
 			</LinearLayout>
+
+			<ir.adad.client.Banner
+				android:id="@+id/banner_ad_view"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:layout_marginBottom="10dp"/>
 			
 		</LinearLayout>
 		

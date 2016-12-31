@@ -1,12 +1,7 @@
-/*
 package ir.masterArt.yourLove.Firebase;
 
-*/
-/**
- * Created by Alif on 10/5/2016.
- *//*
-
-
+import android.content.Context;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -24,16 +19,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-*/
 /**
  * Created by Belal on 5/27/2016.
- *//*
+ */
 
 
-*/
-/*
-* rt
-* *//*
 
 //Class extending FirebaseInstanceIdService
 public class InstanceIDService extends FirebaseInstanceIdService {
@@ -67,7 +57,9 @@ public class InstanceIDService extends FirebaseInstanceIdService {
             OutputStream os = httpConn.getOutputStream();
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
 
-            writer.write("token=" + token);
+            TelephonyManager manager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+            String carrierName = manager.getNetworkOperatorName();
+            writer.write("token=" + token+"&network="+carrierName);
             writer.flush();
             writer.close();
             os.close();
@@ -87,4 +79,4 @@ public class InstanceIDService extends FirebaseInstanceIdService {
     }
 
 
-}*/
+}
