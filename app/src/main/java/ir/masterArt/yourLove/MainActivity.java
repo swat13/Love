@@ -80,17 +80,17 @@ public class MainActivity extends Activity implements OnClickListener {
             LayoutInflater inflater = this.getLayoutInflater();
             View dialogView = inflater.inflate(R.layout.disable_dialog, null);
             TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
-            if (carrierName.contains("MCI")) {
+            if (carrierName.toUpperCase().contains("MCI")) {
                 action = "IR-MCI_0";
                 sendNum = "307212";
                 code = "100";
                 textView.setText(getResources().getString(R.string.mci));
-            } else if (carrierName.contains("cell")) {
+            } else if (carrierName.toUpperCase().contains("cell")) {
                 action = "Irancell_0";
                 sendNum = "738501";
                 code = "100";
                 textView.setText(getResources().getString(R.string.mtn));
-            } else if (carrierName.contains("tel")) {
+            } else if (carrierName.toUpperCase().contains("tel")) {
                 action = "Rightel_0";
                 textView.setText(getResources().getString(R.string.mtn));
             } else {

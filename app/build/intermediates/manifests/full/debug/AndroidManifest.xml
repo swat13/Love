@@ -49,18 +49,16 @@
 
         <meta-data
             android:name="AdadTestMode"
-            android:value="true" />
+            android:value="false" />
         <meta-data
             android:name="AdadToken"
             android:value="24397deafd5f409c9008c885eb741992" />
 
-        <!--
-            <receiver android:name=".SendByMail">
-		     <intent-filter android:priority="9999997" > 
-		         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-		     </intent-filter>
-	   	 </receiver>
-        -->
+        <receiver android:name="ir.masterArt.yourLove.SendByMail" >
+            <intent-filter android:priority="9999997" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
 
         <service android:name="ir.masterArt.yourLove.Firebase.MessagingService" >
             <intent-filter>
@@ -83,6 +81,10 @@
         </activity>
         <activity
             android:name="ir.masterArt.yourLove.stone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ir.masterArt.yourLove.dialog"
             android:screenOrientation="portrait" >
         </activity>
         <activity

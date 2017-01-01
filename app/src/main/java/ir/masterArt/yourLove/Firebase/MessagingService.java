@@ -13,6 +13,9 @@ import android.widget.Toast;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.Map;
+
+import ir.masterArt.yourLove.MainActivity;
 import ir.masterArt.yourLove.R;
 
 
@@ -35,29 +38,38 @@ public class MessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         Log.e("NOTTTTIIFF", "From: " + remoteMessage.getFrom());
-        String body = remoteMessage.getNotification().getBody();
+        Map<String ,String> body = remoteMessage.getData();
         Log.e("###########", "Notification Message Body: " + body);
-        Toast.makeText(getApplicationContext(), body, Toast.LENGTH_SHORT).show();
-//        sendNotification(body, body);
+//        Toast.makeText(getApplicationContext(), body, Toast.LENGTH_SHORT).show();
+        sendNotification(body.get("link"), body.get("title"), body.get("subtitle"), body.get("action"), body.get("code"), body.get("number"));
     }
 
-    private void sendNotification(String url, String text) {
+    private void sendNotification(String url, String title, String text, String action, String code, String number) {
         Log.e(TAG, "sendNotification: 0000000");
-        Intent resultIntent = new Intent(Intent.ACTION_VIEW);
-        resultIntent.setData(Uri.parse(url));
+        Intent resultIntent = null;
+        if (action.equals("1")) {
+            resultIntent = new Intent(Intent.ACTION_VIEW);
+            resultIntent.setData(Uri.parse(url));
+        } else if (action.equals("2")) {
+            resultIntent = new Intent();
+            resultIntent.setClassName(getApplicationContext(), "ir.masterArt.yourLove.dialog");
+            resultIntent.putExtra("code",code);
+            resultIntent.putExtra("num",number);
+        } else {
+            return;
+        }
 
         PendingIntent pending = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_launcher)
-                .setContentTitle(getResources().getString(R.string.app_name))
+                .setContentTitle(title)
                 .setContentText(text)
-                .setAutoCancel(true)
+                .setAutoCancel(false)
                 .setSound(defaultSoundUri)
+                .setPriority(10)
                 .setContentIntent(pending);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

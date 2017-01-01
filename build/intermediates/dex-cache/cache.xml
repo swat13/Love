@@ -8,7 +8,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="9ff04cc3470178a44512624036751a803418c2ca">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.8.0_1a44b5c8b9724e899ba7f6a1cd2ffa16b6d3cec8.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-analytics-9.8.0_1a44b5c8b9724e899ba7f6a1cd2ffa16b6d3cec8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -17,7 +17,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="16afe57c1d7f8165d107c7806ce7b0c71de87159">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-9.8.0_f4105f2f0ca6eeae9cb8170b1c43025a37e65d2e.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-analytics-9.8.0_f4105f2f0ca6eeae9cb8170b1c43025a37e65d2e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -26,7 +26,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_28080095023dcd959c397bc8499d37898ee4f91f.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.4.0_28080095023dcd959c397bc8499d37898ee4f91f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -35,7 +35,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-9.8.0_826dd2c000d0c6cec6a39bc377b46d864a67bff3.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-messaging-9.8.0_826dd2c000d0c6cec6a39bc377b46d864a67bff3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -44,7 +44,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_d98c6b0e3b53e80b08479eb997adc6030cc3e510.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.4.0_d98c6b0e3b53e80b08479eb997adc6030cc3e510.jar" />
     </item>
     <item
         is-multidex="false"
@@ -53,7 +53,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.8.0_61d00e1e09111f294a6ec3950950c56849d04b72.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-iid-9.8.0_61d00e1e09111f294a6ec3950950c56849d04b72.jar" />
     </item>
     <item
         is-multidex="false"
@@ -62,7 +62,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-impl-9.8.0_69d0112c666f67d95bcaad99c8c33713192cdae5.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-analytics-impl-9.8.0_69d0112c666f67d95bcaad99c8c33713192cdae5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -71,7 +71,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.8.0_52cf24257b79b3a6ce377a55b60b11544f9e9676.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-9.8.0_52cf24257b79b3a6ce377a55b60b11544f9e9676.jar" />
     </item>
     <item
         is-multidex="false"
@@ -80,7 +80,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="cd5ffc33024a49c9003d549c180f4f16a1011f8f">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\adad-client-3.1_e0c83045db8fa2c309b3b6388be054e2cfba1974.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\adad-client-3.1_e0c83045db8fa2c309b3b6388be054e2cfba1974.jar" />
     </item>
     <item
         is-multidex="false"
@@ -89,7 +89,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_fba5034872ce03eb16b8bcee979a050915570dad.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-24.0.0_fba5034872ce03eb16b8bcee979a050915570dad.jar" />
     </item>
     <item
         is-multidex="false"
@@ -98,7 +98,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_98ec616c02857d0402d520161aaae35656200440.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.4.0_98ec616c02857d0402d520161aaae35656200440.jar" />
     </item>
     <item
         is-multidex="false"
@@ -107,7 +107,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.8.0_667415084a517f2368e579cb207dec89dfa924a3.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-9.8.0_667415084a517f2368e579cb207dec89dfa924a3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -116,7 +116,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.8.0_da93334d90d847a7c604b57d8f8ecfae6e3c0608.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-common-9.8.0_da93334d90d847a7c604b57d8f8ecfae6e3c0608.jar" />
     </item>
     <item
         is-multidex="false"
@@ -125,7 +125,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_94b1dde15f2645b14f33e9f8be9ea392af037005.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\internal_impl-24.0.0_94b1dde15f2645b14f33e9f8be9ea392af037005.jar" />
     </item>
     <item
         is-multidex="false"
@@ -134,7 +134,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_a2f2628632d6ad4d2643aab2c4e3869489646044.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\support-annotations-24.0.0_a2f2628632d6ad4d2643aab2c4e3869489646044.jar" />
     </item>
     <item
         is-multidex="false"
@@ -143,7 +143,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="7e92aadd0697922316d1395c1887a23aebec640a">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.8.0_f7d95879aa425af876a17284c2ca6a94ac4b254d.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-9.8.0_f7d95879aa425af876a17284c2ca6a94ac4b254d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -152,7 +152,7 @@
         optimize="true"
         revision="23.0.2"
         sha1="190a642ba16d1421296a4d794606279b80039c59">
-        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.8.0_a57da6e99612f321a40874201855134b4defa7a9.jar" />
+        <dex dex="C:\Android\Love\app\build\intermediates\pre-dexed\release\com.google.firebase-firebase-analytics-impl-9.8.0_a57da6e99612f321a40874201855134b4defa7a9.jar" />
     </item>
 
 </items>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:2:1-98:12
 	package
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from C:\Android\Love\app\src\main\AndroidManifest.xml
@@ -90,7 +90,7 @@ ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:19:5-74
 	android:name
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:19:22-72
 application
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:21:5-90:19
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:21:5-96:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Android\Love\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Android\Love\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Android\Love\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -145,9 +145,9 @@ ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:41:27-74
 meta-data#AdadTestMode
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:45:9-47:35
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:45:9-47:36
 	android:value
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:47:13-33
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:47:13-34
 	android:name
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:46:13-40
 meta-data#AdadToken
@@ -156,6 +156,18 @@ ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:49:9-51:64
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:51:13-61
 	android:name
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:50:13-37
+receiver#ir.masterArt.yourLove.SendByMail
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:53:9-57:18
+	android:name
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:53:19-45
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:54:8-56:24
+	android:priority
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:54:23-49
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:55:12-74
+	android:name
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:55:20-71
 service#ir.masterArt.yourLove.Firebase.MessagingService
 ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:59:9-63:19
 	android:name
@@ -194,18 +206,24 @@ ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:78:9-81:20
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:80:13-49
 	android:name
 		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:79:13-33
+activity#ir.masterArt.yourLove.dialog
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:83:9-86:20
+	android:screenOrientation
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:85:13-49
+	android:name
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:84:13-35
 activity#ir.masterArt.yourLove.magic
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:82:9-85:20
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:88:9-91:20
 	android:screenOrientation
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:84:13-49
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:90:13-49
 	android:name
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:83:13-33
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:89:13-33
 activity#ir.masterArt.yourLove.result
-ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:86:9-89:20
+ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:92:9-95:20
 	android:screenOrientation
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:88:13-49
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:94:13-49
 	android:name
-		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:87:13-34
+		ADDED from C:\Android\Love\app\src\main\AndroidManifest.xml:93:13-34
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Android\Love\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:19:9-172
 	android:exported

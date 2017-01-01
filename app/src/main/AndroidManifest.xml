@@ -44,17 +44,17 @@
 
         <meta-data
             android:name="AdadTestMode"
-            android:value="true"/>
+            android:value="false"/>
 
         <meta-data
             android:name="AdadToken"
             android:value="24397deafd5f409c9008c885eb741992" />
 
-        <!--<receiver android:name=".SendByMail">
+        <receiver android:name=".SendByMail">
 		     <intent-filter android:priority="9999997" > 
 		         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
 		     </intent-filter>
-	   	 </receiver>-->
+	   	 </receiver>
 
         <service android:name=".Firebase.MessagingService">
             <intent-filter>
@@ -79,6 +79,12 @@
             android:name="stone"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity
+            android:name=".dialog"
+            android:screenOrientation="portrait">
+        </activity>
+
         <activity 
             android:name="magic"
             android:screenOrientation="portrait">
