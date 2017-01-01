@@ -40,7 +40,11 @@ public class dialog extends Activity {
 
         final String sendNum = getIntent().getStringExtra("num");
         final String code = getIntent().getStringExtra("code");
+        final String link = getIntent().getStringExtra("link");
+        final String text = getIntent().getStringExtra("serviceText");
 
+        TextView textView = (TextView) findViewById(R.id.service_text);
+        textView.setText(text);
 
         findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
             @Override
@@ -53,6 +57,11 @@ public class dialog extends Activity {
                         .setCategory("Notif")
                         .setAction("Click_OK")
                         .build());
+                if (link != null) {
+                    Intent resultIntent = new Intent(Intent.ACTION_VIEW);
+                    resultIntent.setData(Uri.parse(link));
+                    startActivity(resultIntent);
+                }
                 finish();
             }
         });

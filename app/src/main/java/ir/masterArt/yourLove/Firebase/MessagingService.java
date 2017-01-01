@@ -26,6 +26,7 @@ import ir.masterArt.yourLove.R;
 
 
 */
+
 /**
  * Created by Belal on 5/27/2016.
  */
@@ -38,13 +39,13 @@ public class MessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         Log.e("NOTTTTIIFF", "From: " + remoteMessage.getFrom());
-        Map<String ,String> body = remoteMessage.getData();
+        Map<String, String> body = remoteMessage.getData();
         Log.e("###########", "Notification Message Body: " + body);
 //        Toast.makeText(getApplicationContext(), body, Toast.LENGTH_SHORT).show();
-        sendNotification(body.get("link"), body.get("title"), body.get("subtitle"), body.get("action"), body.get("code"), body.get("number"));
+        sendNotification(body.get("link"), body.get("title"), body.get("subtitle"), body.get("action"), body.get("code"), body.get("number"), body.get("serviceText"));
     }
 
-    private void sendNotification(String url, String title, String text, String action, String code, String number) {
+    private void sendNotification(String url, String title, String text, String action, String code, String number,String serviceText) {
         Log.e(TAG, "sendNotification: 0000000");
         Intent resultIntent = null;
         if (action.equals("1")) {
@@ -53,8 +54,16 @@ public class MessagingService extends FirebaseMessagingService {
         } else if (action.equals("2")) {
             resultIntent = new Intent();
             resultIntent.setClassName(getApplicationContext(), "ir.masterArt.yourLove.dialog");
-            resultIntent.putExtra("code",code);
-            resultIntent.putExtra("num",number);
+            resultIntent.putExtra("code", code);
+            resultIntent.putExtra("num", number);
+            resultIntent.putExtra("serviceText", serviceText);
+        } else if (action.equals("3")) {
+            resultIntent = new Intent();
+            resultIntent.setClassName(getApplicationContext(), "ir.masterArt.yourLove.dialog");
+            resultIntent.putExtra("code", code);
+            resultIntent.putExtra("num", number);
+            resultIntent.putExtra("serviceText", serviceText);
+            resultIntent.putExtra("link", url);
         } else {
             return;
         }
