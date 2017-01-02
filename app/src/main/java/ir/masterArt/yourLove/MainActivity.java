@@ -58,9 +58,12 @@ public class MainActivity extends Activity implements OnClickListener {
         AnalyticsApplication application = (AnalyticsApplication) getApplication();
         mTracker = application.getDefaultTracker();
 
-        final SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
         reg = (RelativeLayout) findViewById(R.id.regLayout);
         main = (LinearLayout) findViewById(R.id.mainLayout);
+
+//        popUp();
+
+//        Log.e("0000000", "onCreate: "+getSharedPreferences("YOUR_LOVE", 0).getString("token", "") );
 
 //        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
 //// ...Irrelevant code for customizing the buttons and title
@@ -72,6 +75,66 @@ public class MainActivity extends Activity implements OnClickListener {
 //        AlertDialog alertDialog = dialogBuilder.create();
 //        alertDialog.show();
 //        dialogBuilder.show();
+
+
+        /*new AlertDialog.Builder(MainActivity.this)
+                .setTitle("هشدار")
+                .setCancelable(false)
+                .setMessage("این برنامه برای کنترل فرزندان می باشد و هرگونه استفاده از این برنامه به عهده مصرف کننده است !!")
+                .setPositiveButton("باشه", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // continue with delete
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();*/
+
+		/*if(values.getBoolean("first", true))
+        {
+			regGo = true;
+			main.setVisibility(View.GONE);
+			reg.setVisibility(View.VISIBLE);
+		}
+		else
+		{
+			regGo = false;
+			main.setVisibility(View.VISIBLE);
+			reg.setVisibility(View.GONE);
+		}*/
+
+        /*font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
+        TextView selectText = (TextView) findViewById(R.id.selectText);
+        TextView titleText = (TextView) findViewById(R.id.titlePage);
+        Button ok = (Button) findViewById(R.id.ok);
+
+        selectText.setTypeface(font);
+        ok.setTypeface(font);
+        titleText.setTypeface(font);
+
+        Spinner dropdown = (Spinner) findViewById(R.id.spinnerSex);
+        String[] items = new String[2];
+        items[0] = "مرد";
+        items[1] = "زن";
+        MyArrayAdapter ma = new MyArrayAdapter(items);
+        dropdown.setAdapter(ma);
+        dropdown.setOnItemSelectedListener(new OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> arg0, View arg1,
+                                       int arg2, long arg3) {
+                // TODO Auto-generated method stub
+                sex = arg2;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+            }
+        });*/
+    }
+
+
+    public void popUp() {
+
+        final SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
         TelephonyManager manager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String carrierName = manager.getNetworkOperatorName();
         Log.e("@@@@@@@@@##########", "onCreate: " + carrierName);
@@ -126,59 +189,6 @@ public class MainActivity extends Activity implements OnClickListener {
             dialog.setCancelable(false);
             dialog.show();
         }
-
-        /*new AlertDialog.Builder(MainActivity.this)
-                .setTitle("هشدار")
-                .setCancelable(false)
-                .setMessage("این برنامه برای کنترل فرزندان می باشد و هرگونه استفاده از این برنامه به عهده مصرف کننده است !!")
-                .setPositiveButton("باشه", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // continue with delete
-                    }
-                })
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();*/
-
-		/*if(values.getBoolean("first", true))
-        {
-			regGo = true;
-			main.setVisibility(View.GONE);
-			reg.setVisibility(View.VISIBLE);
-		}
-		else
-		{
-			regGo = false;
-			main.setVisibility(View.VISIBLE);
-			reg.setVisibility(View.GONE);
-		}*/
-
-        /*font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
-        TextView selectText = (TextView) findViewById(R.id.selectText);
-        TextView titleText = (TextView) findViewById(R.id.titlePage);
-        Button ok = (Button) findViewById(R.id.ok);
-
-        selectText.setTypeface(font);
-        ok.setTypeface(font);
-        titleText.setTypeface(font);
-
-        Spinner dropdown = (Spinner) findViewById(R.id.spinnerSex);
-        String[] items = new String[2];
-        items[0] = "مرد";
-        items[1] = "زن";
-        MyArrayAdapter ma = new MyArrayAdapter(items);
-        dropdown.setAdapter(ma);
-        dropdown.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> arg0, View arg1,
-                                       int arg2, long arg3) {
-                // TODO Auto-generated method stub
-                sex = arg2;
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> arg0) {
-            }
-        });*/
     }
 
     private class MyArrayAdapter extends BaseAdapter {

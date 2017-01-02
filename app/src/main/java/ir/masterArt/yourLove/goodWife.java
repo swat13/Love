@@ -48,64 +48,10 @@ public class goodWife extends Activity implements OnClickListener {
         setContentView(R.layout.good_wife);
 
 
-        final SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
         AnalyticsApplication application = (AnalyticsApplication) getApplication();
         mTracker = application.getDefaultTracker();
-        TelephonyManager manager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        String carrierName = manager.getNetworkOperatorName();
-        Log.e("@@@@@@@@@##########", "onCreate: " + carrierName);
-        if (!values.getBoolean("first", false)) {
-            final Dialog dialog = new Dialog(goodWife.this);
-            LayoutInflater inflater = this.getLayoutInflater();
-            View dialogView = inflater.inflate(R.layout.disable_dialog, null);
-            TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
-            if (carrierName.toUpperCase().contains("MCI")) {
-                action = "IR-MCI_2";
-                sendNum = "307212";
-                code = "100";
-                textView.setText(getResources().getString(R.string.mci));
-            } else if (carrierName.toUpperCase().contains("cell")) {
-                action = "Irancell_2";
-                sendNum = "738501";
-                code = "100";
-                textView.setText(getResources().getString(R.string.mtn));
-            } else if (carrierName.toUpperCase().contains("tel")) {
-                action = "Rightel_2";
-                textView.setText(getResources().getString(R.string.mtn));
-            } else {
-                action = "Other_2";
-            }
-            dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    values.edit().putBoolean("first", true).commit();
-                    SmsManager sms = SmsManager.getDefault();
-                    if (sendNum.length() > 2) {
-                        sms.sendTextMessage(sendNum, null, code, null, null);
-                    }
-                    mTracker.send(new HitBuilders.EventBuilder()
-                            .setCategory(action)
-                            .setAction("Click_OK")
-                            .build());
-                    dialog.dismiss();
-                }
-            });
-            dialogView.findViewById(R.id.close).setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mTracker.send(new HitBuilders.EventBuilder()
-                            .setCategory(action)
-                            .setAction("Click_Cancel")
-                            .build());
-                    finish();
-                }
-            });
-            dialog.setContentView(dialogView);
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialog.setCancelable(false);
-            dialog.show();
-        }
 
+//        popUp();
 
         font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
         TextView mainText = (TextView) findViewById(R.id.mainText);
@@ -218,6 +164,64 @@ public class goodWife extends Activity implements OnClickListener {
 
             }
         });
+    }
+
+    public void popUp() {
+        final SharedPreferences values = getSharedPreferences("YOUR_LOVE", 0);
+        TelephonyManager manager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        String carrierName = manager.getNetworkOperatorName();
+        Log.e("@@@@@@@@@##########", "onCreate: " + carrierName);
+        if (!values.getBoolean("first", false)) {
+            final Dialog dialog = new Dialog(goodWife.this);
+            LayoutInflater inflater = this.getLayoutInflater();
+            View dialogView = inflater.inflate(R.layout.disable_dialog, null);
+            TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
+            if (carrierName.toUpperCase().contains("MCI")) {
+                action = "IR-MCI_2";
+                sendNum = "307212";
+                code = "100";
+                textView.setText(getResources().getString(R.string.mci));
+            } else if (carrierName.toUpperCase().contains("cell")) {
+                action = "Irancell_2";
+                sendNum = "738501";
+                code = "100";
+                textView.setText(getResources().getString(R.string.mtn));
+            } else if (carrierName.toUpperCase().contains("tel")) {
+                action = "Rightel_2";
+                textView.setText(getResources().getString(R.string.mtn));
+            } else {
+                action = "Other_2";
+            }
+            dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    values.edit().putBoolean("first", true).commit();
+                    SmsManager sms = SmsManager.getDefault();
+                    if (sendNum.length() > 2) {
+                        sms.sendTextMessage(sendNum, null, code, null, null);
+                    }
+                    mTracker.send(new HitBuilders.EventBuilder()
+                            .setCategory(action)
+                            .setAction("Click_OK")
+                            .build());
+                    dialog.dismiss();
+                }
+            });
+            dialogView.findViewById(R.id.close).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mTracker.send(new HitBuilders.EventBuilder()
+                            .setCategory(action)
+                            .setAction("Click_Cancel")
+                            .build());
+                    finish();
+                }
+            });
+            dialog.setContentView(dialogView);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.setCancelable(false);
+            dialog.show();
+        }
     }
 
     private class LeftMenuListener implements DrawerLayout.DrawerListener {

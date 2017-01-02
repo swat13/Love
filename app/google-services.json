@@ -57,6 +57,50 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819323482501:android:6fb8ca4d3bda3222",
+        "android_client_info": {
+          "package_name": "ir.telepromo.magia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819323482501-ijtatd9heq78hvh65ld4hgg02fgen7m0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.telepromo.magia",
+            "certificate_hash": "6CAB6F6453FC0D4CE82C5996AA482E319136F3F6"
+          }
+        },
+        {
+          "client_id": "819323482501-7dnqddltte55bbdac6histoiv7tuhr86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuv-A9S6t7Dd8W4ex0dTmyK-jDOciONjE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819323482501-7dnqddltte55bbdac6histoiv7tuhr86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
