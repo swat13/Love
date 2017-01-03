@@ -12,12 +12,16 @@
         "source": "C:\\Android\\Love\\app\\src\\main\\res\\drawable-hdpi\\month_stone.png"
     },
     {
-        "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\slide_left.png",
-        "source": "C:\\Android\\Love\\app\\src\\main\\res\\drawable-hdpi\\slide_left.png"
+        "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\favicon.png",
+        "source": "C:\\Android\\Love\\app\\src\\main\\res\\drawable-hdpi\\favicon.png"
     },
     {
         "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\close_menu.png",
         "source": "C:\\Android\\Love\\app\\src\\main\\res\\drawable-hdpi\\close_menu.png"
+    },
+    {
+        "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\slide_left.png",
+        "source": "C:\\Android\\Love\\app\\src\\main\\res\\drawable-hdpi\\slide_left.png"
     },
     {
         "merged": "C:\\Android\\Love\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\result_bottom_top.png",

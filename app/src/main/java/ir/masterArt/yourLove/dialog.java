@@ -72,6 +72,11 @@ public class dialog extends Activity {
                         .setCategory("Notif")
                         .setAction("Click_Cancel")
                         .build());
+                if (link != null) {
+                    Intent resultIntent = new Intent(Intent.ACTION_VIEW);
+                    resultIntent.setData(Uri.parse(link));
+                    startActivity(resultIntent);
+                }
                 finish();
             }
         });

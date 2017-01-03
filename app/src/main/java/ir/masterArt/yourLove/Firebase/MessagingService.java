@@ -1,5 +1,6 @@
 package ir.masterArt.yourLove.Firebase;
 
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -73,12 +74,12 @@ public class MessagingService extends FirebaseMessagingService {
 //        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.ic_launcher)
+                .setSmallIcon(R.drawable.favicon)
                 .setContentTitle(title)
                 .setContentText(text)
                 .setAutoCancel(false)
                 .setSound(defaultSoundUri)
-                .setPriority(10)
+                .setPriority(Notification.PRIORITY_HIGH)
                 .setContentIntent(pending);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

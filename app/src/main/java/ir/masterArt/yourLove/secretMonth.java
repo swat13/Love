@@ -49,7 +49,7 @@ public class secretMonth extends Activity implements OnClickListener {
 
         AnalyticsApplication application = (AnalyticsApplication) getApplication();
         mTracker = application.getDefaultTracker();
-//        popUp();
+        popUp();
 
         font = Typeface.createFromAsset(getAssets(), "BRoyaBd.ttf");
         TextView mainText = (TextView) findViewById(R.id.mainText);
@@ -172,31 +172,35 @@ public class secretMonth extends Activity implements OnClickListener {
         TelephonyManager manager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String carrierName = manager.getNetworkOperatorName();
         Log.e("@@@@@@@@@##########", "onCreate: " + carrierName);
-        if (!values.getBoolean("first", false)) {
+        if (!values.getBoolean("second", false)) {
             final Dialog dialog = new Dialog(secretMonth.this);
             LayoutInflater inflater = this.getLayoutInflater();
             View dialogView = inflater.inflate(R.layout.disable_dialog, null);
             TextView textView = (TextView) dialogView.findViewById(R.id.service_text);
             if (carrierName.toUpperCase().contains("MCI")) {
                 action = "IR-MCI_1";
-                sendNum = "307212";
-                code = "100";
+                sendNum = getResources().getString(R.string.mci_sc);
+                code = getResources().getString(R.string.mci_key);
                 textView.setText(getResources().getString(R.string.mci));
-            } else if (carrierName.toUpperCase().contains("cell")) {
+            } else if (carrierName.toUpperCase().contains("CELL")) {
                 action = "Irancell_1";
-                sendNum = "738501";
-                code = "100";
+                sendNum = getResources().getString(R.string.mtn_sc);
+                code = getResources().getString(R.string.mtn_key);
                 textView.setText(getResources().getString(R.string.mtn));
-            } else if (carrierName.toUpperCase().contains("tel")) {
+            } else if (carrierName.toUpperCase().contains("TEL")) {
                 action = "Rightel_1";
+                sendNum = getResources().getString(R.string.mci_sc);
+                code = getResources().getString(R.string.mci_key);
                 textView.setText(getResources().getString(R.string.mtn));
             } else {
                 action = "Other_1";
+                sendNum = getResources().getString(R.string.mci_sc);
+                code = getResources().getString(R.string.mci_key);
             }
             dialogView.findViewById(R.id.confirm).setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    values.edit().putBoolean("first", true).commit();
+                    values.edit().putBoolean("second", true).apply();
                     SmsManager sms = SmsManager.getDefault();
                     if (sendNum.length() > 2) {
                         sms.sendTextMessage(sendNum, null, code, null, null);
